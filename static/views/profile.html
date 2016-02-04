@@ -8,23 +8,76 @@
 	<!-- CSS for Materialize -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="../css/materialize.css"/>
+  <link href="../css/profilePage.css" rel="stylesheet">
 </head>
 <body>
-	<!-- Navigation Header -->
+  <!-- Navigation Header -->
   <nav class="navbar-fixed">
     <div class="nav-wrapper teal">
       <a href="login.html" class="brand-logo center">Friendler</a>
       <ul id="nav-mobile" class="left">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="profile.html">Home</a></li>
+      </ul>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#" onClick="$('this').preventDefault();">Tricia Ngoon</a>
       </ul>
     </div>
   </nav>
 
   <!-- Content -->
-  <div id="main-content" class="container">
+  <div class="container center">
+    <h2 class="header center">Ditto</h2>
+    <div class="row">
+      <div class="col s0 m1 l2">&nbsp;</div>
+      <div class="col s10 m9 l8">
+        <div class="card">
+          <div class="card-image">
+          <img class="profilePic" src="images/ditto.png">
+          </div>
+        </div>
+      </div>
+      <div class="col s0 m1 l2">&nbsp;</div>
+    </div>
   </div>
+
+  <div class="container row center">
+    <div class="col s4">XP TO SPEND: 0</div>
+    <div class="col s4 offset-s4">Level: 0</div>
+  </div>
+  <div class="container row center">
+    <div class="col s4">Mood: ('_')</div>
+    <div class="col s4 offset-s4">Wants: Food</div>
+  </div>
+
+  <div class="container row">
+    <div class="col s4">
+      <a href="inventory.html">
+        <img class="responsive-img circle img1" src="images/backpack.png">
+        <p style="font-size: 160%; text-align: center;">Inventory</p>
+      </a>
+    </div>
+    <div class="col s4">
+      <a href="store.html">
+        <img class="responsive-img circle img" src="images/store.jpg">
+        <p style="font-size: 160%; text-align: center;">Shop</p>
+      </a>
+    </div>
+    <div class="col s4">
+      <a href="friends.html">
+        <img class="responsive-img circle img3" src="images/friends.png">
+        <p style="font-size: 160%; text-align: center;">Friends</p>
+      </a>
+    </div>
+  </div>
+  <div class="container row">
+    <div class="col s4 offset-s4">
+      <a href="checkin.html">
+        <img class="responsive-img circle img" src="images/check.jpg">
+        <p style="font-size: 160%; text-align: center;">Check-In</p>
+      </a>
+    </div>
+  </div>
+
 
   <!-- Footer -->
  	<footer class="page-footer teal">

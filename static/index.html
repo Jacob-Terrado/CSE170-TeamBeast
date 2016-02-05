@@ -1,60 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>World of Friendler!</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>Friendler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS for Materialize -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
+  <link type="text/css" rel="stylesheet" href="../css/materialize.css"/>
 </head>
+<body onLoad="Materialize.fadeInImage('#main-content')">
+  <!-- Navigation Header -->
+  <nav class="navbar-fixed">
+    <div class="nav-wrapper teal">
+      <a href="#" class="brand-logo center">Friendler</a>
+      <ul id="nav-mobile" class="right">
+        <li onClick="Materialize.toast('This page is currently a work in progress', 2000)"><a href="#" class="hide-on-small-only">About Us</li>
+    </div>
+  </nav>
 
-<body>
-  <div class = container>
-    <div class="row">
-      <form class="col s12">
-        <h2 class = "center-align">Welcome to the World of Friendler!</h2>
-
-        <div class = "row">
-          <div class = "center-align">
-            <img src = http://vignette3.wikia.nocookie.net/nonciclopedia/images/4/47/Ditto_ebete.png/revision/latest?cb=20131105105752, 
-            style = "width: 50%; height: 50%">
-          </div>
-        </div>
+  <!-- Content -->
+  <div class="container">
+    <div id="main-content" class="card">
+      <br>
+      <h1 class="header center orange-text">Welcome to Friendler</h1>
+      <div class="container center">
+        <img class="responsive-img" onClick="$('this').preventDefault()"src="images/corgi_friendler.png">
       </div>
-
-        <div class="row">
-          <div class = "col s12">
-              <div class="input-field col s8 offset-s2">
-                <input placeholder = "pslayer@gmail.com" id="email" type="email" class="validate">
-                <label class="active" for="email">Email</label>
-              </div>
+      <div class="row center">
+        <form class="col s12">
+          <div class="row">
+            <div class="col s0 m2 l3">&nbsp;</div>
+            <div class="input-field col s8 m6 l6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
             </div>
-            <div class="row">
-              <div class="input-field col s8 offset-s2">
-                <input id="password" type="password" class="validate">
-                <label class="active" for="password">Password</label>
-              </div>
+            <div class="col s0 m2 l3">&nbsp;</div>
+          </div>    
+          <div class="row center">
+            <div class="col s0 m2 l3">&nbsp;</div>
+            <div class="input-field col s8 m6 l6">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
             </div>
+            <div class="col s0 m2 l3">&nbsp;</div>
           </div>
-
-          <div class = "row">
-              <div class = "col s8 offset-s4">
-                <a href = "views/profile.html" class="btn-large waves-effect waves-light" type="button" name="action">Login
-                </a>
-              </div>
-              <div class = "row">
-                <div class="col s8 offset-s4">
-                  <a href = "views/signup.html" class="btn-large waves-effect waves-light" type="button" name="action">New User
-                  </a>
-                </div>
-              </div>
+          <div class="row center">
+            <a class="waves-effect waves-light btn" href="profile.html">Login</a>
           </div>
-
-      </form>
+          <div class="row center">
+            <a href="signup.html">New User? Sign up here</a>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Friendler</h5>
+          <p class="grey-text text-lighten-4">Here at Friendler, we understand that social anxiety is often an inhibitting factor for people that prevent them from meeting new friends and strengthening old bonds. However, by providing you with small and incremental incentives, we hope to mitigate these anchors to help you lean into your discomforts and make social interactions feel more routine and encouraging.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2016 Copyright
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts for Materialize -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
 </body>
 </html>

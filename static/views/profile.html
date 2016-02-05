@@ -1,86 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Friendler</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Friendler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- CSS for Materialize -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="../css/materialize.css"/>
-  <link href="../css/profilePage.css" rel="stylesheet">
+  <!-- CSS for Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../css/materialize.css"/>
+  <style>
+  .faaab {
+    color:black;
+  }
+  </style>
 </head>
-<body>
+<body onLoad="Materialize.fadeInImage('#main-content')">
   <!-- Navigation Header -->
   <nav class="navbar-fixed">
     <div class="nav-wrapper teal">
       <a href="#" class="brand-logo center">Friendler</a>
-      <ul id="nav-mobile" class="left">
-        <li><a href="profile.html">Home</a></li>
-      </ul>
       <ul id="nav-mobile" class="right">
-        <li><a href="#" onClick="$('this').preventDefault();">Tricia Ngoon</a>
-        <li><a href="../index.html">Logout</a></li>
+        <li><a href="#" class="hide-on-small-only" onClick="$('this').preventDefault();">Tricia Ngoon</a>
+        <li><a href="index.html">Logout</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Content -->
-  <div class="container center">
-    <h2 class="header center">Ditto</h2>
-    <div class="row">
-      <div class="col s0 m1 l2">&nbsp;</div>
-      <div class="col s10 m9 l8">
-        <div class="card">
-          <div class="card-image">
-          <img class="profilePic" src="images/ditto.png">
-          </div>
-        </div>
+  <div class="container">
+    <div id="main-content" class="card">
+      <br>
+      <h2 class="header center black-text">My Friendler</h2>
+      <div class="container center">
+        <img class="responsive-img" src="images/ditto.png">
       </div>
-      <div class="col s0 m1 l2">&nbsp;</div>
+      <div class="container">
+        <div class="collection">
+          <a href="#!" class="collection-item">Name:<span class="badge">Ditto</span></a>
+          <a href="#!" class="collection-item">Mood:<span class="badge">v(^_^)v</span></a>
+          <a href="#!" class="collection-item">Level:<span class="badge">1</span></a>
+          <a href="#!" class="collection-item">Wants:<span class="new badge">Food</span></a>
+        </div>
+        <br>
+        <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating btn-large red">
+            <i class="large material-icons">menu</i>
+          </a>
+          <ul>
+            <li><a href="store.html" class="btn-floating blue-grey"><i class="material-icons">local_grocery_store</i></a><label class="faaab">Store</label></li>
+            <li><a href="inventory.html" class="btn-floating blue-grey"><i class="material-icons">assignment</i></a><label class="faaab">Inventory</label></li>
+            <li><a href="checkin.html" class="btn-floating blue-grey"><i class="material-icons">place</i></a><label class="faaab">Check In</label></li>
+            <li><a href="friends.html" class="btn-floating blue-grey"><i class="material-icons">contacts</i></a><label class="faaab">Friends</label></li>
+          </ul>
+        </div>        
+      </div>
     </div>
   </div>
-
-  <div class="container row center">
-    <div class="col s4">XP TO SPEND: 0</div>
-    <div class="col s4 offset-s4">Level: 0</div>
-  </div>
-  <div class="container row center">
-    <div class="col s4">Mood: ('_')</div>
-    <div class="col s4 offset-s4">Wants: 
-      <a href="inventory.html" class="teal btn-flat">Food</a>
-    </div>
-  </div>
-
-  <div class="container row">
-    <div class="col s4">
-      <a href="inventory.html">
-        <img class="responsive-img circle img1" src="images/backpack.png">
-        <p style="font-size: 160%; text-align: center;">Inventory</p>
-      </a>
-    </div>
-    <div class="col s4">
-      <a href="store.html">
-        <img class="responsive-img circle img" src="images/store.jpg">
-        <p style="font-size: 160%; text-align: center;">Shop</p>
-      </a>
-    </div>
-    <div class="col s4">
-      <a href="friends.html">
-        <img class="responsive-img circle img3" src="images/friends.png">
-        <p style="font-size: 160%; text-align: center;">Friends</p>
-      </a>
-    </div>
-  </div>
-  <div class="container row">
-    <div class="col s4 offset-s4">
-      <a href="checkin.html">
-        <img class="responsive-img circle img" src="images/check.jpg">
-        <p style="font-size: 160%; text-align: center;">Check-In</p>
-      </a>
-    </div>
-  </div>
-
 
   <!-- Footer -->
  	<footer class="page-footer teal">

@@ -3168,7 +3168,6 @@ span.badge.new {
 }
 
 span.badge.new:after {
-  content: " new";
 }
 
 nav ul a span.badge {

@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="../css/materialize.css"/>
 </head>
-<body>
+<body onLoad="Materialize.fadeInImage('#main-content')">
   <!-- Navigation Header -->
   <nav class="navbar-fixed">
     <div class="nav-wrapper teal">
@@ -18,7 +18,7 @@
         <li><a href="profile.html">Back</a></li>
       </ul>
       <ul id="nav-mobile" class="right">
-        <li><a href="#" onClick="$('this').preventDefault();">Tricia Ngoon</a>
+        <li><a class="hide-on-small-only" href="#" onClick="$('this').preventDefault();">Tricia Ngoon</a>
         <li><a href="index.html">Logout</a></li>
       </ul>
     </div>

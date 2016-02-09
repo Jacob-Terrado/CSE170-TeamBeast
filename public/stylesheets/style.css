@@ -1,0 +1,26 @@
+* {
+  transition: background 0.5s;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.test {
+  border: 2px solid red;
+}
+
+.badge {
+  cursor: default;
+  border-radius: 16px;
+  display: inline;
+  height: 32px;
+  margin: 10px 8px 0 0;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 31%;
+  background: rgb(224, 224, 224);
+  color: rgb(66, 66, 66);
+  left: calc(40% - 44px);
+}

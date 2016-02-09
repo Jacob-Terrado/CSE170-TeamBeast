@@ -1,20 +1,18 @@
 {
-  "name": "cs147-lab-1",
-  "description": "Serving static content via html files",
-  "version": "0.0.1",
-  "author": "CS147 Staff <cs147@cs.stanford.edu>",
-
-  "repository": {
-  	"type": "git",
-  	"url": "https://github.com/StanfordHCI/cs147"
+  "name": "flapper-news",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
   },
-  "license": "MIT",
-
-  "main": "server.js",
   "dependencies": {
-    "express": "3.x"
-  },
-  "engines": {
-  	"node": "0.10.x"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "mongoose": "^4.4.2",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "hostbusters",
+  "description": "CSE 112 Team 9",
+  "main": "",
+  "authors": [
+    "Saveen Chadalawada <sachadal@ucsd.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/saveenchad/hostbuster-frontend",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material-icons": "^0.6.0",
+    "angular-material": "^1.0.5",
+    "angular-ui-router": "^0.2.18",
+    "angular": "^1.5.0",
+    "material-design-icons": "^2.1.3"
+  }
+}
